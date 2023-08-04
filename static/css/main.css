@@ -1,0 +1,148 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1em;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    margin: 10 auto;
+}
+
+a.social-network, a.social-network span {
+    display: block;
+    font-size: 0.7em;
+}
+
+.splash-container .background {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.background {
+    background: url('../images/purmamarca.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.splash {
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    top: 1em; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    color: rgb(50,89,143);
+    font-family: 'B612 Mono', monospace;
+    font-size: 180%;
+    padding: 15px 0;
+}
+
+.card-main, .card-footer {
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: #FFF;
+}
+
+.card-main .content {
+    padding: 0 0.7em;
+}
+
+.card-main .content p {
+    font-size: 0.4em;
+}
+
+.card-main .content h1 {
+    font-size: 0.6em;
+}
+
+.card-main .content h2 {
+    font-size: 0.5em;
+}
+
+.card-footer {
+    margin-top: 10px;
+}
+
+.top-description {
+    font-family: sans-serif;
+    display:none;
+}
+
+.bottom-description {
+    font-family: sans-serif;
+    display:block;
+    padding-bottom: 0.3em;
+}
+
+.self-picture {
+    height: 100%;
+    object-fit: cover;
+}
+
+.center-vertical {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.image-container {
+    display: flex;
+}
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the styles.
+ */
+@media (min-width: 48em) {
+
+    /* We increase the body font size */
+    body {
+        line-height: 1.1em;
+        font-size: 18px;
+    }
+
+    /* We decrease the width of the .splash, since we have more width
+    to work with */
+    .splash {
+        width: 75%;
+    }
+
+    .top-description {
+        display:block;
+    }
+
+    .bottom-description {
+        display:none;
+    }
+}
+
+@media (min-width: 64em) {
+
+    /* We increase the body font size */
+    body {
+        line-height: 1.25em;
+        font-size: 18px;
+    }
+
+    /* We decrease the width of the .splash, since we have more width
+    to work with */
+    .splash {
+        width: 60%;
+    }
+
+}
