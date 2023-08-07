@@ -6,7 +6,7 @@
 
 body {
     line-height: 1em;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 a {
@@ -110,13 +110,6 @@ a.social-network, a.social-network span {
  * of the styles.
  */
 @media (min-width: 48em) {
-
-    /* We increase the body font size */
-    body {
-        line-height: 1.1em;
-        font-size: 18px;
-    }
-
     /* We decrease the width of the .splash, since we have more width
     to work with */
     .splash {
@@ -133,12 +126,6 @@ a.social-network, a.social-network span {
 }
 
 @media (min-width: 64em) {
-
-    /* We increase the body font size */
-    body {
-        line-height: 1.25em;
-        font-size: 18px;
-    }
 
     /* We decrease the width of the .splash, since we have more width
     to work with */
