@@ -1,3 +1,4 @@
+import qrcodegenerator
 from flask_frozen import Freezer
 from app import app
 
