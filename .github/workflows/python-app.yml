@@ -56,4 +56,6 @@ jobs:
         python -m pip install -r requirements.txt
         python freeze.py
         aws s3 sync build/ s3://${{ secrets.BUCKET_NAME }}
+        aws cloudfront create-invalidation --distribution-id ${{ secrets.PERSONAL_SITE_DISTRIBUTION_ID }} --paths "/*"
+
 
