@@ -6,10 +6,9 @@ THRESHOLD = 9
 
 run = lint.Run(["freeze.py"], do_exit=False) 
 
-score = run.linter.stats["global_note"]  
+score = run.linter.stats.global_note
 
 if score < THRESHOLD: 
-
     print("Linter failed: Score < threshold value") 
 
     sys.exit(1) 
