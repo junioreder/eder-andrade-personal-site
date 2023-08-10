@@ -4,7 +4,9 @@ Generates static files
 
 from flask_frozen import Freezer
 from app import app
-import qrcodegenerator # pylint: disable=unused-import
+from qrcodegenerator import generateQRCode
+
+generateQRCode()
 
 freezer = Freezer(app)
 
